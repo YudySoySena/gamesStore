@@ -1,6 +1,7 @@
 import React from 'react'
 import './home.css'
 import GameSwiper from '../components/GameSwiper'
+import GameCard from '../components/GameCard'
 
 function Home({ games }) {
   return (
@@ -20,7 +21,7 @@ function Home({ games }) {
           </div>
         </div>
         <div className="row">
-          {games.slide(0, 4).map(game =>(
+          {games.slice(0, 4).map(game =>(
             <GameCard key={game._id} game={game}/>
           ))
           }
