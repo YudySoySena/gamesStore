@@ -1,7 +1,7 @@
 [
     {
       "_id": 1,
-      "nombre": "The Legend of Zelda: Breath of the Wild",
+      "nombre": "The Legend of Zelda",
       "categoria": "Aventura",
       "tamaño": 13800000, 
       "precio": 250000,
@@ -11,12 +11,13 @@
       "descripcion": "Un juego de aventura épico en un mundo abierto.",
       "trailer": "https://www.youtube.com/embed/ofH5ptn5w-A?si=x7xTGxQcNP7od54r",
       "rating": 4.9,
+      "discount": 0,
       "active": true
     },
     {
       "_id": 2,
       "nombre": "Minecraft",
-      "categoria": "Sandbox",
+      "categoria": "Aventura",
       "tamaño": 300000, 
       "precio": 100000,
       "licenciasDisponibles": 1000,
@@ -25,52 +26,26 @@
       "descripcion": "Un juego de construcción y aventura en un mundo de bloques.",
       "trailer": "https://www.youtube.com/embed/MmB9b5njVbA?si=asnQm9tjU5B2ACes",
       "rating": 4.8,
+      "discount": 0,
       "active": true
     },
     {
       "_id": 3,
       "nombre": "Fortnite",
-      "categoria": "Battle Royale",
+      "categoria": "Aventura",
       "tamaño": 9000000, 
-      "precio": 0,
+      "precio": 400000,
       "licenciasDisponibles": 10000,
       "licenciasVendidas": 9000,
       "img": "./assets/games/fornite.jpg",
       "descripcion": "Un juego de batalla campal multijugador en línea.",
       "trailer": "https://www.youtube.com/embed/lGh8ZemDGek?si=5NeD0_XydCHUwk2w",
       "rating": 4.7,
+      "discount": 0,
       "active": true
     },
     {
-      "_id": 4,
-      "nombre": "Among Us",
-      "categoria": "Party",
-      "tamaño": 64000, 
-      "precio": 15000,
-      "licenciasDisponibles": 2000,
-      "licenciasVendidas": 1800,
-      "img": "./assets/games/among-us.jpeg",
-      "descripcion": "Un juego de deducción social multijugador.",
-      "trailer": "https://www.youtube.com/embed/TsIZD1ic2Dg?si=7DVL9WyrgAviSnkW",
-      "rating": 4.5,
-      "active": true
-    },
-    {
-      "_id": 5,
-      "nombre": "Animal Crossing: New Horizons",
-      "categoria": "Simulation",
-      "tamaño": 6800000, 
-      "precio": 200000,
-      "licenciasDisponibles": 300,
-      "licenciasVendidas": 250,
-      "img": "./assets/games/Animal-Crossing.jpeg",
-      "descripcion": "Un juego de simulación de vida en una isla.",
-      "trailer": "https://www.youtube.com/embed/5YPxiTLMcdg?si=R9K12c5_NG6OARxE",
-      "rating": 4.6,
-      "active": true
-    },
-    {
-        "id": 6,
+        "_id": 4,
         "nombre": "FIFA 23",
         "categoria": "Deportes",
         "tamaño": 50000000,
@@ -81,10 +56,11 @@
         "descripcion": "El último juego de la popular serie de fútbol.",
         "trailer": "https://www.youtube.com/embed/zMyeAFzCTM0?si=07E1cNeMl6KnQ5pB",
         "rating": 4.7,
+        "discount": 0,
         "active": true
       },
       {
-        "id": 7,
+        "_id": 5,
         "nombre": "NBA 2K23",
         "categoria": "Deportes",
         "tamaño": 60000000,
@@ -95,10 +71,26 @@
         "descripcion": "El juego de baloncesto más realista.",
         "trailer": "https://www.youtube.com/embed/88PyS2yZdsM?si=IglDTVuc0siOHL4n",
         "rating": 4.8,
+        "discount": 0,
         "active": true
       },
       {
-        "id": 8,
+        "_id": 6,
+        "nombre": "Tony Hawk's Pro Skater 1+2",
+        "categoria": "Deportes",
+        "tamaño": 200000000,
+        "precio": 350000,
+        "licenciasDisponibles": 800,
+        "licenciasVendidas": 700,
+        "img": "./assets/games/tony-hawk-pro-skater.jpg",
+        "descripcion": "Un remake de los clásicos juegos de skateboarding, ahora con gráficos mejorados.",
+        "trailer": "https://www.youtube.com/embed/JC8owhVU0cI?si=9OlCTaf7SPEqiwp8",
+        "rating": 4.8,
+        "discount": 0,
+        "active": true
+      },
+      {
+        "_id": 7,
         "nombre": "Call of Dutty: Modern Warfare",
         "categoria": "Acción",
         "tamaño": 100000000,
@@ -109,10 +101,11 @@
         "descripcion": "Un juego de disparos en primera persona con una intensa campaña.",
         "trailer": "https://www.youtube.com/embed/bH1lHCirCGI?si=E4HUN-C1GBYaPjyv",
         "rating": 4.9,
+        "discount": 0,
         "active": true
       },
       {
-        "id": 9,
+        "_id": 8,
         "nombre": "Grand Theft Auto V",
         "categoria": "Acción",
         "tamaño": 65000000,
@@ -123,10 +116,11 @@
         "descripcion": "Un juego de mundo abierto con una historia envolvente.",
         "trailer": "https://www.youtube.com/embed/hvoD7ehZPcM?si=D5erKZr263751Tm7",
         "rating": 4.8,
+        "discount": 0,
         "active": true
       },
       {
-        "id": 10,
+        "_id": 9,
         "nombre": "Resident Evil Village",
         "categoria": "Acción",
         "tamaño": 45000000, 
@@ -137,6 +131,53 @@
         "descripcion": "Un juego de terror y supervivencia en primera persona.",
         "trailer": "https://www.youtube.com/embed/u3wS-Q2KBpk?si=479V3e-BOHeta4AS",
         "rating": 4.8,
+        "discount": 0,
         "active": true
-      }
+      },
+      {
+        "_id": 10,
+        "nombre": "Tetris",
+        "categoria": "Rompecabezas",
+        "tamaño": 50000000,
+        "precio": 50000,
+        "licenciasDisponibles": 1000,
+        "licenciasVendidas": 850,
+        "img": "./assets/games/tetris.jpg",
+        "descripcion": "Un clásico juego de rompecabezas donde debes encajar las piezas que caen.",
+        "trailer": "https://www.youtube.com/embed/HT7ldEvV-1c?si=f_Yn5d_mBqiOfbzA",
+        "rating": 4.8,
+        "discount": 0,
+        "active": true
+      },
+      {
+        "_id": 11,
+        "nombre": "Candy Crush",
+        "categoria": "Rompecabezas",
+        "tamaño": 80000000,
+        "precio": 0,
+        "licenciasDisponibles": 2000,
+        "licenciasVendidas": 1900,
+        "img": "./assets/games/candy-crush.jpg",
+        "descripcion": "Un popular juego de rompecabezas donde debes combinar dulces para avanzar niveles.",
+        "trailer": "https://www.youtube.com/embed/W8hGMI_q1Xo?si=j88-HiRtXcanMQBK",
+        "rating": 4.5,
+        "discount": 0,
+        "active": true
+      },
+      {
+        "_id": 12,
+        "nombre": "Monument Valley",
+        "categoria": "Rompecabezas",
+        "tamaño": 300000000,
+        "precio": 300000 ,
+        "licenciasDisponibles": 500,
+        "licenciasVendidas": 450,
+        "img": "./assets/games/monument-valley.jpg",
+        "descripcion": "Un juego de rompecabezas con hermosos gráficos y acertijos basados en la perspectiva.",
+        "trailer": "https://www.youtube.com/embed/IdDaexqqXfQ?si=I_1rX8IIWgfrA58f",
+        "rating": 4.7,
+        "discount": 0,
+        "active": true
+        }
+      
 ]

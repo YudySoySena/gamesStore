@@ -5,7 +5,8 @@ import NavListItem from './NavListItem'
 
 
 function SideMenu({active}) {
-  const [navData, setNavData] = useState(navListData)
+  const [navData, setNavData] = useState(navListData);
+
   return (
     <div className={`sideMenu ${active ? 'active' : undefined}`}>
       <a href="#" className="logo">
