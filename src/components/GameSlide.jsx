@@ -20,7 +20,7 @@ function GameSlide({game, active, toggleVideo}) {
               <p>{game.descripcion}</p>
               <div className="buttons">
                 <a href="#" className="orderBtn">
-                  Order Now
+                  Agregar
                 </a>
                 <a
                   href="#"

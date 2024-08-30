@@ -7,22 +7,22 @@ const filterListData = [
     {
         _id: 2,
         name: 'Aventura',
-        active: true,
+        active: false,
     },
     {
         _id: 3,
         name: 'Deportes',
-        active: true,
+        active: false,
     },
     {
         _id: 4,
         name: 'Accion',
-        active: true,
+        active: false,
     },
     {
         _id: 5,
         name: 'Rompecabezas',
-        active: true,
+        active: false,
     }
 ]
 

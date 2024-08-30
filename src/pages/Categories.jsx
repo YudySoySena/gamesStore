@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
-import './categories.css'
-import filterListData from '../data/filterListData'
+import React, { useState } from 'react';
+import './categories.css';
+import filterListData from '../data/filterListData';
+import GameCard from '../components/GameCard';
 
 function Categories({ games, reference }) {
-    const [filters, setFilters] = useState(filterListData)
+    const [data, setData] = useState(games);
+
+    const [filters, setFilters] = useState(filterListData);
     const handleFilterGames = category => {
         setFilters(
             filters.map(filter => {
@@ -14,33 +17,57 @@ function Categories({ games, reference }) {
                 return filter;
             })
         );
+        if (category === 'All') {
+            setData(games);
+        } else {
+            setData(games.filter(game => game.categoria === category));
+        }
     };
+
+    const [text, setText] = useState('');       
+
+    const handleSearchGames = e=> {
+        setData(games.filter(game=>game.nombre.toLowerCase().includes(e.target.value.toLowerCase())))
+        setText(e.target.value);
+    }
+
     return (
         <section id="categories" className='categories' ref={reference}>
             <div className="container-fluid mt-2">
                 <div className="row">
-                    <div className="col-lg-8">
+                    <div className="col-lg-8 d-flex align-items-center justify-content-start">
                         <ul className="filters">
                             {filters.map(filter => (
                                 <li
-                                key={filter._id}
-                                className={`${filter.active ? 'active' : undefined}`}
-                                onClick={()=>handleFilterGames(filter.name)}>
+                                    key={filter._id}
+                                    className={`${filter.active ? 'active' : undefined}`}
+                                    onClick={() => handleFilterGames(filter.name)}
+                                >
                                     {filter.name}
                                 </li>
                             ))}
                         </ul>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 d-flex align-items-center justify-content-end">
                         <div className="search">
-                        <i class="bi bi-search"></i>
-                        <input type="text" name='search' placeholder='Buscar' />
+                            <i className="bi bi-search"></i>
+                            <input 
+                            type="text" 
+                            name="search"
+                            value={text}
+                            placeholder="Buscar" 
+                            onChange={handleSearchGames}/>
                         </div>
                     </div>
+                </div>
+                <div className="row">
+                    {data.map(game => (
+                        <GameCard key={game._id} game={game} />
+                    ))}
                 </div>
             </div>
         </section>
     );
 }
 
-export default Categories
+export default Categories;
